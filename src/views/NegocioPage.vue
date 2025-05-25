@@ -207,7 +207,16 @@ const initApexCharts = async () => {
       type: 'bar',
       height: '100%',
       background: 'transparent',
-      toolbar: { show: false }
+      toolbar: { show: false },
+      offsetY: -10
+    },
+    plotOptions: {
+      bar: {
+        borderRadius: 4,
+        dataLabels: {
+          position: 'top'
+        }
+      }
     },
     series: [{
       name: 'Predicciones',
@@ -215,17 +224,42 @@ const initApexCharts = async () => {
     }],
     xaxis: {
       categories: ['Ene', 'Feb', 'Mar', 'Abr', 'May', 'Jun'],
-      labels: { style: { colors: colors.primary } }
+      labels: { 
+        style: { 
+          colors: colors.primary,
+          fontSize: '11px'
+        },
+        offsetY: 0
+      },
+      axisBorder: {
+        show: true,
+        color: colors.secondary
+      },
+      axisTicks: {
+        show: true,
+        color: colors.secondary
+      }
     },
     yaxis: {
-      labels: { style: { colors: colors.primary } }
+      labels: { 
+        style: { 
+          colors: colors.primary,
+          fontSize: '11px'
+        }
+      }
     },
     colors: [colors.primary],
     grid: {
-      borderColor: colors.secondary
+      borderColor: colors.secondary,
+      padding: {
+        bottom: 10
+      }
     },
     theme: {
       mode: 'dark'
+    },
+    dataLabels: {
+      enabled: false
     }
   };
   
@@ -522,7 +556,7 @@ ion-col {
   margin: 0 0 12px 0;
   font-size: 14px;
   font-weight: 600;
-  flex-shrink: 0; /* Evita que el título se comprima */
+  flex-shrink: 0;
 }
 
 .kpi-card {
@@ -678,7 +712,7 @@ ion-col {
   .chart-canvas,
   .custom-chart,
   .realtime-chart {
-    height: calc(250px - 46px); /* 250px - padding - título */
+    height: calc(250px - 46px);
     max-height: calc(250px - 46px);
   }
 }

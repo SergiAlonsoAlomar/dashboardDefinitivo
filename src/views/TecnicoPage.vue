@@ -300,8 +300,8 @@ const initErrorsChart = async () => {
       { name: 'DB', max: 20, color: colors.primary },
       { name: 'Red', max: 20, color: colors.primary }
     ],
-    center: ['50%', '45%'], // Movido hacia arriba para dar espacio a la leyenda
-    radius: '60%', // Reducido ligeramente para mejor ajuste
+    center: ['50%', '45%'],
+    radius: '60%',
     axisName: {
       color: colors.primary,
       fontSize: 12,
@@ -328,7 +328,7 @@ const initErrorsChart = async () => {
         ]
       }
     },
-    splitNumber: 4 // Menos líneas de división para mayor claridad
+    splitNumber: 4
   },
   series: [{
     name: 'Análisis de Errores',
@@ -403,10 +403,10 @@ const initErrorsChart = async () => {
         }
       }
     ],
-    bottom: 5, // Posicionado en la parte inferior
+    bottom: 5,
     left: 'center',
-    itemGap: 20, // Más espacio entre elementos de la leyenda
-    backgroundColor: 'rgba(26, 29, 14, 0.8)', // Fondo semi-transparente
+    itemGap: 20,
+    backgroundColor: 'rgba(26, 29, 14, 0.8)',
     borderColor: colors.secondary,
     borderWidth: 1,
     borderRadius: 4,
@@ -573,7 +573,7 @@ ion-col {
   margin: 0 0 12px 0;
   font-size: 14px;
   font-weight: 600;
-  flex-shrink: 0; /* Evita que el título se comprima */
+  flex-shrink: 0;
 }
 
 .kpi-card {
@@ -740,7 +740,7 @@ ion-col {
   .chart-canvas,
   .custom-gauge,
   .live-monitoring {
-    height: calc(250px - 46px); /* 250px - padding - título */
+    height: calc(250px - 46px);
     max-height: calc(250px - 46px);
   }
 }
@@ -770,7 +770,7 @@ ion-col {
   .chart-canvas,
   .custom-gauge,
   .live-monitoring {
-    height: calc(220px - 46px); /* 220px - padding - título */
+    height: calc(220px - 46px);
     max-height: calc(220px - 46px);
   }
   

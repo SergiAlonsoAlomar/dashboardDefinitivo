@@ -200,7 +200,6 @@ const technicalKPIs = ref<SmartGoal[]>([
 ]);
 
 // Combinamos ambos arrays para mostrar los mismos KPIs en ambas secciones (esto es temporal)
-const smartGoals = ref<SmartGoal[]>([...businessKPIs.value, ...technicalKPIs.value]);
 </script>
 
 <style scoped>
@@ -218,16 +217,16 @@ ion-accordion.accordion-expanded ion-item[slot='header'] {
 
 /* Estilos para mantener la coherencia con tu app de pádel */
 h1 {
-  color: #3880ff; /* Color azul similar al de Ionic */
+  color: #3880ff;
   font-weight: bold;
 }
 
 ion-content {
-  --background: #f8f9fa; /* Fondo claro para contraste */
+  --background: #f8f9fa;
 }
 
 .box {
-  background: #ffffff; /* Fondo blanco para las cajas */
+  background: #ffffff;
   border-radius: 10px;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
@@ -235,16 +234,16 @@ ion-content {
 /* Estilos para el tema oscuro si lo prefieres */
 @media (prefers-color-scheme: dark) {
   ion-content {
-    --background: #1e1e1e; /* Fondo oscuro */
+    --background: #1e1e1e;
   }
   
   .box {
-    background: #2d2d2d; /* Fondo más oscuro para cajas */
+    background: #2d2d2d;
     color: #ffffff;
   }
   
   h1 {
-    color: #4c8dff; /* Azul más claro para modo oscuro */
+    color: #4c8dff;
   }
 }
 </style>
