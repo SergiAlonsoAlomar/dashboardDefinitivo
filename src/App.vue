@@ -232,7 +232,7 @@ ion-note {
   font-size: 16px;
 
 
-  color: var(--ion-color-medium-shade);
+  color: var(--ion-color-primary);
 }
 
 

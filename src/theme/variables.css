@@ -1,2 +1,156 @@
 /* For information on how to create your own theme, please see:
 http://ionicframework.com/docs/theming/ */
+
+/** Ionic CSS Variables **/
+:root {
+  /** primary **/
+  --ion-color-primary: #C3FF00;
+  --ion-color-primary-rgb: 195, 255, 0;
+  --ion-color-primary-contrast: #1A1D0E;
+  --ion-color-primary-contrast-rgb: 26, 29, 14;
+  --ion-color-primary-shade: #ABE000;
+  --ion-color-primary-tint: #C9FF1A;
+
+  /** secondary **/
+  --ion-color-secondary: #2E2E34;
+  --ion-color-secondary-rgb: 46, 46, 52;
+  --ion-color-secondary-contrast: #C3FF00;
+  --ion-color-secondary-contrast-rgb: 195, 255, 0;
+  --ion-color-secondary-shade: #28282E;
+  --ion-color-secondary-tint: #434348;
+
+  /** tertiary **/
+  --ion-color-tertiary: #1A1D0E;
+  --ion-color-tertiary-rgb: 26, 29, 14;
+  --ion-color-tertiary-contrast: #C3FF00;
+  --ion-color-tertiary-contrast-rgb: 195, 255, 0;
+  --ion-color-tertiary-shade: #17190C;
+  --ion-color-tertiary-tint: #313426;
+
+  /** success **/
+  --ion-color-success: #C3FF00;
+  --ion-color-success-rgb: 195, 255, 0;
+  --ion-color-success-contrast: #1A1D0E;
+  --ion-color-success-contrast-rgb: 26, 29, 14;
+  --ion-color-success-shade: #ABE000;
+  --ion-color-success-tint: #C9FF1A;
+
+  /** warning **/
+  --ion-color-warning: #ffc409;
+  --ion-color-warning-rgb: 255, 196, 9;
+  --ion-color-warning-contrast: #000000;
+  --ion-color-warning-contrast-rgb: 0, 0, 0;
+  --ion-color-warning-shade: #e0ac08;
+  --ion-color-warning-tint: #ffca22;
+
+  /** danger **/
+  --ion-color-danger: #eb445a;
+  --ion-color-danger-rgb: 235, 68, 90;
+  --ion-color-danger-contrast: #ffffff;
+  --ion-color-danger-contrast-rgb: 255, 255, 255;
+  --ion-color-danger-shade: #cf3c4f;
+  --ion-color-danger-tint: #ed576b;
+
+  /** dark **/
+  --ion-color-dark: #1A1D0E;
+  --ion-color-dark-rgb: 26, 29, 14;
+  --ion-color-dark-contrast: #C3FF00;
+  --ion-color-dark-contrast-rgb: 195, 255, 0;
+  --ion-color-dark-shade: #17190C;
+  --ion-color-dark-tint: #313426;
+
+  /** medium **/
+  --ion-color-medium: #2E2E34;
+  --ion-color-medium-rgb: 46, 46, 52;
+  --ion-color-medium-contrast: #C3FF00;
+  --ion-color-medium-contrast-rgb: 195, 255, 0;
+  --ion-color-medium-shade: #28282E;
+  --ion-color-medium-tint: #434348;
+
+  /** light **/
+  --ion-color-light: #f4f5f8;
+  --ion-color-light-rgb: 244, 245, 248;
+  --ion-color-light-contrast: #1A1D0E;
+  --ion-color-light-contrast-rgb: 26, 29, 14;
+  --ion-color-light-shade: #d7d8da;
+  --ion-color-light-tint: #f5f6f9;
+
+  /* Custom background colors */
+  --ion-background-color: #1A1D0E;
+  --ion-background-color-rgb: 26, 29, 14;
+  
+  --ion-text-color: #C3FF00;
+  --ion-text-color-rgb: 195, 255, 0;
+  
+  --ion-toolbar-background: #1A1D0E;
+  --ion-toolbar-color: #C3FF00;
+  
+  --ion-item-background: #2E2E34;
+  --ion-item-color: #C3FF00;
+}
+
+/* Dark mode styles */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --ion-background-color: #1A1D0E;
+    --ion-background-color-rgb: 26, 29, 14;
+    
+    --ion-text-color: #C3FF00;
+    --ion-text-color-rgb: 195, 255, 0;
+    
+    --ion-toolbar-background: #1A1D0E;
+    --ion-toolbar-color: #C3FF00;
+    
+    --ion-item-background: #2E2E34;
+    --ion-item-color: #C3FF00;
+  }
+}
+
+/* Global styles for the dashboard */
+ion-content {
+  --background: var(--ion-background-color);
+  --color: var(--ion-text-color);
+}
+
+ion-toolbar {
+  --background: var(--ion-toolbar-background);
+  --color: var(--ion-toolbar-color);
+}
+
+ion-menu {
+  --ion-background-color: #1A1D0E;
+  --ion-text-color: #C3FF00;
+}
+
+ion-menu ion-item {
+  --background: transparent;
+  --color: #C3FF00;
+}
+
+ion-menu ion-item.selected {
+  --background: rgba(195, 255, 0, 0.1);
+  --color: #C3FF00;
+}
+
+/* Chart container styles */
+.chart-container {
+  background: transparent !important;
+}
+
+/* Custom scrollbar for webkit browsers */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #2E2E34;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #C3FF00;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #ABE000;
+}
