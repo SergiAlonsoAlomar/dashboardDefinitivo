@@ -62,13 +62,13 @@
         <ion-row class="ion-row-2">
           <ion-col size="12" size-lg="9">
             <div class="box">
-              <h4>Crecimiento de Usuarios (Chart.js)</h4>
+              <h4>Crecimiento de Usuarios</h4>
               <canvas ref="chartjsCanvas" class="chart-canvas"></canvas>
             </div>
           </ion-col>
           <ion-col size="12" size-lg="3">
             <div class="box">
-              <h4>Distribución Premium (Gráfico Propio)</h4>
+              <h4>Distribución Premium</h4>
               <div ref="customChart" class="custom-chart"></div>
             </div>
           </ion-col>
@@ -78,13 +78,13 @@
         <ion-row class="ion-row-3">
           <ion-col size="12" size-lg="4">
             <div class="box">
-              <h4>Predicciones por Mes (ApexCharts)</h4>
+              <h4>Predicciones por Mes</h4>
               <div ref="apexChart" class="chart-container"></div>
             </div>
           </ion-col>
           <ion-col size="12" size-lg="4">
             <div class="box">
-              <h4>Tiempo de Sesión (ECharts)</h4>
+              <h4>Tiempo de Sesión</h4>
               <div ref="echartsContainer" class="chart-container"></div>
             </div>
           </ion-col>

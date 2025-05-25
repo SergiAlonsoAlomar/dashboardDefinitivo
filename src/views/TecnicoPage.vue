@@ -53,13 +53,13 @@
         <ion-row class="ion-row-2">
           <ion-col size="12" size-md="3" push-md="9">
             <div class="box">
-              <h4>Puntuación Stores (Gráfico Propio)</h4>
+              <h4>Puntuación Stores</h4>
               <div ref="customGauge" class="custom-gauge"></div>
             </div>
           </ion-col>
           <ion-col size="12" size-md="9" pull-md="3">
             <div class="box">
-              <h4>Rendimiento del Sistema (Chart.js)</h4>
+              <h4>Rendimiento del Sistema</h4>
               <canvas ref="performanceChart" class="chart-canvas"></canvas>
             </div>
           </ion-col>
@@ -69,13 +69,13 @@
         <ion-row class="ion-row-3">
           <ion-col size="12" size-lg="4.5">
             <div class="box">
-              <h4>Tiempo de Respuesta (ApexCharts)</h4>
+              <h4>Tiempo de Respuesta</h4>
               <div ref="responseTimeChart" class="chart-container"></div>
             </div>
           </ion-col>
           <ion-col size="12" size-lg="4.5">
             <div class="box">
-              <h4>Errores por Categoría (ECharts - Radar)</h4>
+              <h4>Errores por Categoría</h4>
               <div ref="errorsChart" class="chart-container"></div>
             </div>
           </ion-col>
