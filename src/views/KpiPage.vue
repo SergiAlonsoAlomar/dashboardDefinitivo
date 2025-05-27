@@ -71,80 +71,80 @@ interface SmartGoal {
   smart: SmartElement[];
 }
 
-// Array de KPIs de Negocio
+// Array de KPIs de Negocio (basados en datos actuales de los gráficos)
 const businessKPIs = ref<SmartGoal[]>([
   {
     id: 1,
     title: "Aumentar usuarios activos",
-    description: "Incrementar el número de usuarios activos mensuales en un 30% (de 10,000 a 13,000) en los próximos 6 meses mediante campañas de marketing digital y mejoras en la experiencia de usuario.",
+    description: "Incrementar el número de usuarios activos mensuales de 13,000 actuales a 17,000 (30% de crecimiento) en los próximos 6 meses mediante campañas de marketing digital y mejoras en la experiencia de usuario.",
     smart: [
       { letter: "S", content: "Incrementar usuarios activos mensuales" },
-      { letter: "M", content: "30% (de 10,000 a 13,000)" },
+      { letter: "M", content: "de 13,000 a 17,000 usuarios (30% crecimiento)" },
       { letter: "A", content: "mediante campañas de marketing y mejoras UX" },
-      { letter: "R", content: "para aumentar la base de usuarios fieles" },
+      { letter: "R", content: "para consolidar liderazgo en el mercado" },
       { letter: "T", content: "en los próximos 6 meses" }
     ]
   },
   {
     id: 2,
     title: "Mejorar tasa de predicciones",
-    description: "Aumentar la participación en predicciones de partidos al 60% de los usuarios activos (de 4,000 a 7,800 usuarios) para el próximo torneo importante mediante notificaciones push y recompensas por participación.",
+    description: "Aumentar la tasa de predicciones del 60% actual al 75% de los usuarios activos (de 7,800 a 9,750 usuarios) para el próximo torneo importante mediante gamificación y recompensas por participación.",
     smart: [
-      { letter: "S", content: "Aumentar participación en predicciones" },
-      { letter: "M", content: "60% de usuarios activos (4,000 a 7,800)" },
-      { letter: "A", content: "con notificaciones push y sistema de recompensas" },
-      { letter: "R", content: "para aumentar engagement con la app" },
+      { letter: "S", content: "Aumentar tasa de participación en predicciones" },
+      { letter: "M", content: "del 60% al 75% (de 7,800 a 9,750 usuarios)" },
+      { letter: "A", content: "con gamificación y sistema de recompensas" },
+      { letter: "R", content: "para aumentar engagement y retención" },
       { letter: "T", content: "para el próximo torneo importante" }
     ]
   },
   {
     id: 3,
     title: "Crecimiento de usuarios premium",
-    description: "Lograr que el 15% de los usuarios activos (1,950 usuarios) se conviertan en premium en los próximos 12 meses ofreciendo contenido exclusivo y estadísticas avanzadas.",
+    description: "Incrementar los usuarios premium de 1,950 actuales (15%) a 2,600 usuarios (20%) en los próximos 8 meses ofreciendo análisis avanzados y contenido exclusivo de torneos.",
     smart: [
-      { letter: "S", content: "Convertir usuarios en premium" },
-      { letter: "M", content: "15% de usuarios activos (1,950)" },
-      { letter: "A", content: "con contenido exclusivo y estadísticas avanzadas" },
+      { letter: "S", content: "Aumentar usuarios premium" },
+      { letter: "M", content: "de 1,950 (15%) a 2,600 usuarios (20%)" },
+      { letter: "A", content: "con análisis avanzados y contenido exclusivo" },
       { letter: "R", content: "para aumentar ingresos recurrentes" },
-      { letter: "T", content: "en los próximos 12 meses" }
+      { letter: "T", content: "en los próximos 8 meses" }
     ]
   },
   {
     id: 4,
     title: "Aumentar tiempo en app",
-    description: "Incrementar el tiempo promedio de sesión en la app de 5 a 8 minutos diarios por usuario en los próximos 3 meses mediante la implementación de contenido personalizado y notificaciones relevantes.",
+    description: "Incrementar el tiempo promedio de sesión de 8 minutos actuales a 12 minutos por usuario en los próximos 4 meses mediante contenido personalizado y funciones interactivas.",
     smart: [
       { letter: "S", content: "Aumentar tiempo promedio de sesión" },
-      { letter: "M", content: "de 5 a 8 minutos diarios por usuario" },
-      { letter: "A", content: "con contenido personalizado y notificaciones" },
-      { letter: "R", content: "para mejorar retención de usuarios" },
-      { letter: "T", content: "en los próximos 3 meses" }
+      { letter: "M", content: "de 8 a 12 minutos por usuario" },
+      { letter: "A", content: "con contenido personalizado y funciones interactivas" },
+      { letter: "R", content: "para mejorar retención y engagement" },
+      { letter: "T", content: "en los próximos 4 meses" }
     ]
   },
   {
     id: 5,
     title: "Expandir base de usuarios",
-    description: "Aumentar la base de usuarios registrados en un 40% (de 50,000 a 70,000) en los próximos 9 meses mediante estrategias de referidos y colaboraciones con clubes de pádel.",
+    description: "Crecer la base de usuarios registrados de 65,000 actuales a 85,000 (30% de crecimiento) en los próximos 10 meses mediante estrategias de referidos y partnerships con academias de pádel.",
     smart: [
       { letter: "S", content: "Expandir base de usuarios registrados" },
-      { letter: "M", content: "40% (de 50,000 a 70,000)" },
-      { letter: "A", content: "con estrategias de referidos y colaboraciones" },
-      { letter: "R", content: "para posicionar la app como líder en su sector" },
-      { letter: "T", content: "en los próximos 9 meses" }
+      { letter: "M", content: "de 65,000 a 85,000 usuarios (30% crecimiento)" },
+      { letter: "A", content: "con referidos y partnerships con academias" },
+      { letter: "R", content: "para posicionar la app como líder del sector" },
+      { letter: "T", content: "en los próximos 10 meses" }
     ]
   }
 ]);
 
-// Array de KPIs Técnicos
+// Array de KPIs Técnicos (basados en datos actuales de los gráficos)
 const technicalKPIs = ref<SmartGoal[]>([
   {
     id: 1,
     title: "Reducir tiempo de carga",
-    description: "Disminuir el tiempo de carga promedio de la app de 2.5s a 1.2s en el 90% de los dispositivos para finales del próximo trimestre mediante optimización de código y caché.",
+    description: "Disminuir el tiempo de carga promedio de la app de 1.2s actuales a 0.8s en el 95% de los dispositivos para finales del próximo trimestre mediante optimización de código y CDN.",
     smart: [
       { letter: "S", content: "Reducir tiempo de carga de la app" },
-      { letter: "M", content: "de 2.5s a 1.2s en 90% de dispositivos" },
-      { letter: "A", content: "mediante optimización de código y caché" },
+      { letter: "M", content: "de 1.2s a 0.8s en 95% de dispositivos" },
+      { letter: "A", content: "mediante optimización de código y CDN" },
       { letter: "R", content: "para mejorar experiencia de usuario" },
       { letter: "T", content: "para finales del próximo trimestre" }
     ]
@@ -152,11 +152,11 @@ const technicalKPIs = ref<SmartGoal[]>([
   {
     id: 2,
     title: "Mejorar tasa de retención",
-    description: "Incrementar la retención de usuarios a 30 días del 25% al 40% en los próximos 6 meses implementando un sistema de notificaciones personalizadas y recordatorios de predicciones.",
+    description: "Incrementar la retención de usuarios a 30 días del 40% actual al 55% en los próximos 6 meses implementando onboarding personalizado y notificaciones inteligentes.",
     smart: [
       { letter: "S", content: "Mejorar retención de usuarios a 30 días" },
-      { letter: "M", content: "del 25% al 40%" },
-      { letter: "A", content: "con notificaciones personalizadas y recordatorios" },
+      { letter: "M", content: "del 40% al 55%" },
+      { letter: "A", content: "con onboarding personalizado y notificaciones inteligentes" },
       { letter: "R", content: "para aumentar valor de por vida del usuario" },
       { letter: "T", content: "en los próximos 6 meses" }
     ]
@@ -164,42 +164,43 @@ const technicalKPIs = ref<SmartGoal[]>([
   {
     id: 3,
     title: "Reducir tasa de errores",
-    description: "Disminuir la tasa de errores críticos reportados del 5% al 1% en los próximos 2 meses mediante pruebas exhaustivas y monitoreo continuo.",
+    description: "Disminuir la tasa de errores críticos del 1% actual al 0.3% en los próximos 3 meses mediante testing automatizado y monitoreo proactivo.",
     smart: [
       { letter: "S", content: "Reducir tasa de errores críticos" },
-      { letter: "M", content: "del 5% al 1%" },
-      { letter: "A", content: "con pruebas exhaustivas y monitoreo" },
-      { letter: "R", content: "para mejorar estabilidad de la app" },
-      { letter: "T", content: "en los próximos 2 meses" }
+      { letter: "M", content: "del 1% al 0.3%" },
+      { letter: "A", content: "con testing automatizado y monitoreo proactivo" },
+      { letter: "R", content: "para mejorar estabilidad y confianza" },
+      { letter: "T", content: "en los próximos 3 meses" }
     ]
   },
   {
     id: 4,
-    title: "Optimizar actualizaciones en vivo",
-    description: "Lograr que el 95% de las actualizaciones en vivo de partidos tengan un retraso menor a 30 segundos para el próximo gran torneo mediante mejoras en la API y sistema de caché.",
+    title: "Optimizar tiempo de respuesta",
+    description: "Reducir el tiempo de respuesta promedio de la API de 28ms actuales a 15ms para el próximo gran torneo mediante optimización de base de datos y caché distribuido.",
     smart: [
-      { letter: "S", content: "Optimizar actualizaciones en vivo" },
-      { letter: "M", content: "95% con retraso <30 segundos" },
-      { letter: "A", content: "con mejoras en API y sistema de caché" },
-      { letter: "R", content: "para ofrecer información en tiempo real" },
+      { letter: "S", content: "Optimizar tiempo de respuesta de API" },
+      { letter: "M", content: "de 28ms a 15ms promedio" },
+      { letter: "A", content: "con optimización de BD y caché distribuido" },
+      { letter: "R", content: "para ofrecer experiencia más fluida" },
       { letter: "T", content: "para el próximo gran torneo" }
     ]
   },
   {
     id: 5,
     title: "Mejorar puntuación de stores",
-    description: "Aumentar la puntuación promedio en App Store y Google Play de 4.0 a 4.5 estrellas en los próximos 3 meses mediante corrección de bugs reportados y mejoras UX basadas en feedback.",
+    description: "Aumentar la puntuación promedio en App Store y Google Play de 4.5 estrellas actuales a 4.7 estrellas en los próximos 4 meses mediante mejoras UX y resolución proactiva de issues.",
     smart: [
       { letter: "S", content: "Mejorar puntuación en stores" },
-      { letter: "M", content: "de 4.0 a 4.5 estrellas" },
-      { letter: "A", content: "corrigiendo bugs y mejorando UX" },
+      { letter: "M", content: "de 4.5 a 4.7 estrellas" },
+      { letter: "A", content: "con mejoras UX y resolución proactiva" },
       { letter: "R", content: "para aumentar descargas orgánicas" },
-      { letter: "T", content: "en los próximos 3 meses" }
+      { letter: "T", content: "en los próximos 4 meses" }
     ]
   }
 ]);
 
 // Combinamos ambos arrays para mostrar los mismos KPIs en ambas secciones (esto es temporal)
+const smartGoals = ref<SmartGoal[]>([...businessKPIs.value, ...technicalKPIs.value]);
 </script>
 
 <style scoped>
@@ -217,33 +218,34 @@ ion-accordion.accordion-expanded ion-item[slot='header'] {
 
 /* Estilos para mantener la coherencia con tu app de pádel */
 h1 {
-  color: #3880ff;
+  color: #C3FF00;
   font-weight: bold;
 }
 
 ion-content {
-  --background: #f8f9fa;
+  --background: #1A1D0E;
 }
 
 .box {
-  background: #ffffff;
+  background: #2E2E34;
   border-radius: 10px;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 10px rgba(195, 255, 0, 0.1);
+  border: 1px solid #2E2E34;
 }
 
-/* Estilos para el tema oscuro si lo prefieres */
+/* Estilos para el tema oscuro */
 @media (prefers-color-scheme: dark) {
   ion-content {
-    --background: #1e1e1e;
+    --background: #1A1D0E;
   }
   
   .box {
-    background: #2d2d2d;
-    color: #ffffff;
+    background: #2E2E34;
+    color: #C3FF00;
   }
   
   h1 {
-    color: #4c8dff;
+    color: #C3FF00;
   }
 }
 </style>
